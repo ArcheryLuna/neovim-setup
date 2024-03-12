@@ -179,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  vimsence = {
+    loaded = true,
+    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/vimsence",
+    url = "https://github.com/vimsence/vimsence"
   }
 }
 

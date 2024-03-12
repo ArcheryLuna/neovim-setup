@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
     }
 
     use { "mistricky/codesnap.nvim", run = "make" }
-
+ 
+    use { "vimsence/vimsence" }
 
 end)
