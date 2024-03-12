@@ -61,4 +61,12 @@ return require('packer').startup(function(use)
     use {
         'github/copilot.vim'
     }
+    use {
+        "ellisonleao/carbon-now.nvim",
+        config = function() require('carbon-now').setup() end
+    }
+
+    use { "mistricky/codesnap.nvim", run = "make" }
+
+
 end)

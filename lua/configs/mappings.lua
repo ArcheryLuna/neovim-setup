@@ -1,5 +1,3 @@
-print("This is from the Mappings file")
-
 -- Map the leader
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pp", vim.cmd.q)

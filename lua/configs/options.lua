@@ -1,5 +1,3 @@
-print("this is from options.lua")
-
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4

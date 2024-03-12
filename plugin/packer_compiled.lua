@@ -79,10 +79,21 @@ _G.packer_plugins = {
     path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["carbon-now.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15carbon-now\frequire\0" },
+    loaded = true,
+    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/carbon-now.nvim",
+    url = "https://github.com/ellisonleao/carbon-now.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["codesnap.nvim"] = {
+    loaded = true,
+    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/codesnap.nvim",
+    url = "https://github.com/mistricky/codesnap.nvim"
   },
   ["copilot.vim"] = {
     loaded = true,
@@ -172,6 +183,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: carbon-now.nvim
+time([[Config for carbon-now.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15carbon-now\frequire\0", "config", "carbon-now.nvim")
+time([[Config for carbon-now.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
