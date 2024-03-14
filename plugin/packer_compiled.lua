@@ -81,13 +81,13 @@ _G.packer_plugins = {
   },
   ["barbar.nvim"] = {
     loaded = true,
-    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    path = "/Users/sebastianluna/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
   ["carbon-now.nvim"] = {
     config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15carbon-now\frequire\0" },
     loaded = true,
-    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/carbon-now.nvim",
+    path = "/Users/sebastianluna/.local/share/nvim/site/pack/packer/start/carbon-now.nvim",
     url = "https://github.com/ellisonleao/carbon-now.nvim"
   },
   ["cmp-nvim-lsp"] = {
@@ -97,7 +97,7 @@ _G.packer_plugins = {
   },
   ["codesnap.nvim"] = {
     loaded = true,
-    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/codesnap.nvim",
+    path = "/Users/sebastianluna/.local/share/nvim/site/pack/packer/start/codesnap.nvim",
     url = "https://github.com/mistricky/codesnap.nvim"
   },
   ["copilot.vim"] = {
@@ -107,7 +107,7 @@ _G.packer_plugins = {
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/Users/sebastianluna/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   harpoon = {
@@ -152,7 +152,7 @@ _G.packer_plugins = {
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/sebastianluna/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -197,7 +197,7 @@ _G.packer_plugins = {
   },
   vimsence = {
     loaded = true,
-    path = "/home/archeryluna/.local/share/nvim/site/pack/packer/start/vimsence",
+    path = "/Users/sebastianluna/.local/share/nvim/site/pack/packer/start/vimsence",
     url = "https://github.com/vimsence/vimsence"
   }
 }
