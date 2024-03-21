@@ -14,7 +14,7 @@ vim.keymap.set('n', '<leader>bp', vim.cmd.BufferPin, opts)
 
 -- Close buffer
 
-vim.keymap.set('n', '<leader>bc', vim.cmd.BufferClose, opts)
+vim.keymap.set('n', '<leader>cl', vim.cmd.BufferClose, opts)
 -- Wipeout buffer
 --                 :BufferWipeout
 -- Close commands

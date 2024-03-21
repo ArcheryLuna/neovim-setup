@@ -17,7 +17,7 @@ require("nvim-tree").setup({
 		width = 25,
 	},
 	filters = {
-		dotfiles = true,
+		dotfiles = false,
 	},
 })
 
