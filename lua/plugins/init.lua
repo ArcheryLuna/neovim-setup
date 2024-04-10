@@ -61,17 +61,10 @@ return require('packer').startup(function(use)
     use {
         'github/copilot.vim'
     }
-    use {
-        "ellisonleao/carbon-now.nvim",
-        config = function() require('carbon-now').setup() end
-    }
-
-    use { "mistricky/codesnap.nvim", run = "make" }
  
     use { "vimsence/vimsence" }
 
     use { 'nvim-tree/nvim-web-devicons' } -- OPTIONAL: for file icons
     use { 'lewis6991/gitsigns.nvim' } -- OPTIONAL: for git status
-    use { 'romgrk/barbar.nvim' }
 
 end)
