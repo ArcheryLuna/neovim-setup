@@ -35,7 +35,7 @@ lsp.set_preferences({
 
 mason.setup({})
 masonLspConf.setup({
-	ensure_installed = {'tsserver', 'rust_analyzer', 'eslint', 'lua_ls', "tailwindcss", "cssls", "clangd", "cmake", "html", "htmx"},
+	ensure_installed = {'ts_ls', 'rust_analyzer', 'eslint', 'lua_ls', "tailwindcss", "cssls", "clangd", "cmake", "html" },
 	handlers = {
 		lsp.default_setup,
 		lua_ls = function()
