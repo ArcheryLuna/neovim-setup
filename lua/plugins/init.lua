@@ -61,10 +61,6 @@ return require('packer').startup(function(use)
   		}
 	}
 
-    -- Github Copilot When on new PC use the `:copilot setup` command 
-    use {
-        'github/copilot.vim'
-    }
     use { "vimsence/vimsence" }
     -- These optional plugins should be loaded directly because of a bug in Packer lazy loading
     use {'nvim-tree/nvim-web-devicons'} -- OPTIONAL: for file icons
