@@ -2,7 +2,7 @@ local lsp = require("lsp-zero")
 local mason = require('mason')
 local masonLspConf = require('mason-lspconfig')
 local lspConf = require('lspconfig')
-
+local cmp = require('cmp')
 
 lsp.on_attach(function(client, bufnr)
 	local opts = {buffer = bufnr, remap = false}
@@ -20,7 +20,6 @@ lsp.on_attach(function(client, bufnr)
 
 -- Lsp keymappings
 
-local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
 	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
@@ -28,14 +27,28 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   	['<C-y>'] = cmp.mapping.confirm({ select = true }),
   	["<C-Space>"] = cmp.mapping.complete(),
 })
+cmp.setup({
+    sources = {
+        { name = "nvim_lsp" }
+    },
+    snippet = {
+        expand = function(args)
+            vim.snippet.expand(args.body)
+        end,
+    },
+    cmp_mappings,
+    cmp_select
+})
 
 lsp.set_preferences({
 	sign_icons = {},
 })
 
-mason.setup({})
+mason.setup({
+    ensure_installed = {"mypy"}
+})
 masonLspConf.setup({
-	ensure_installed = {'ts_ls', 'rust_analyzer', 'eslint', 'lua_ls', "tailwindcss", "cssls", "clangd", "cmake", "html" },
+	ensure_installed = {'ts_ls', 'rust_analyzer','pyright', 'ruff', 'eslint', 'lua_ls', "tailwindcss", "cssls", "clangd", "cmake", "html" },
 	handlers = {
 		lsp.default_setup,
 		lua_ls = function()
@@ -44,3 +57,10 @@ masonLspConf.setup({
 		end,
 	},
 })
+
+lspConf.pyright.setup({
+    on_attach = lsp.on_attach,
+    capabilities = capabilities,
+    filetypes = {"python"}
+})
+

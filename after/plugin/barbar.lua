@@ -34,3 +34,21 @@ vim.keymap.set('n', '<Space>bw', vim.cmd.BufferOrderByWindowNumber, opts)
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
+
+local barbar = require('barbar')
+
+barbar.setup {
+    animation = true,
+    auto_hide = false,
+    clickable = true,
+    sidebar_filetypes = {
+        NvimTree = true,
+        undotree = {
+            text = 'undotree',
+            align = 'center',
+        }
+    },
+    sort = {
+        ignore_case = true,
+    }
+}
