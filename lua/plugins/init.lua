@@ -67,4 +67,12 @@ return require('packer').startup(function(use)
     use {'lewis6991/gitsigns.nvim'} -- OPTIONAL: for git status
     use {'romgrk/barbar.nvim'}
     use {'prettier/vim-prettier'}
+    use {
+        'jay-babu/mason-null-ls.nvim',
+        requires = {
+            {'williamboman/mason.nvim'},
+            {'nvimtools/none-ls.nvim'}
+        }
+    }
+
 end)
