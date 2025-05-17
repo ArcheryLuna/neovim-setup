@@ -86,7 +86,7 @@ lspconfig.pyright.setup({
 
 -- Setup mason-null-ls
 mason_null_ls.setup({
-    ensure_installed = { "black", "mypy", "ruff", "prettier" },
+    ensure_installed = { "black", "mypy", "ruff", "prettier", "debugpy" },
     automatic_installation = true,
 })
 
