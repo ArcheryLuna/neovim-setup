@@ -84,4 +84,7 @@ return require('packer').startup(function(use)
             { 'nvim-neotest/nvim-nio' },
         }
     }
+
+    -- Discord Rich Presence
+    use { "andweeb/presence.nvim" }
 end)
